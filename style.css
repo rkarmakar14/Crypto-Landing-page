@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+  }
+
+  .navbar{
+    display: flex;
+    background-color: #1f1f1f;
+    flex-direction: row;
+    position: relative;
+    flex: .3;
+    padding: 20px ;
+    justify-content: space-around;
+  }
+  .list{
+    display: flex;
+    flex: .7;
+    position: relative;
+    right: 350px;
+    flex-direction: row;
+    /* background-color: aquamarine; */
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+  .logo{
+    flex: .2;
+    /* background-color: aqua; */
+    width: 80%;
+    height: 80%;
+  }
+  .list-item{
+    display: flex;
+    /* background-color: aqua; */
+    font-size: 20px;
+    color: #fff;
+    flex-direction: row;
+    flex: 2;
+    justify-content: flex-start;
+    font-weight: 1000px;
+    margin-left: 20px;
+  }
+  
+  .list-item:first-child:after{
+    content:"^";
+    transform: rotate(180deg);
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+  }
+  .list-item:first-child::before{
+    content:"|";
+    transform: rotate(180deg);
+    margin-right: 20px;
+    font-size: 40px;
+    font-style: 900;
+  }
+.button-small{
+  display: flex;
+   flex: .2;
+    background-color: #8D3DAF;
+    color: black;
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .hero{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    padding: 8% 10%;
+    padding-bottom: 137px;
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+  .hero-heading { 
+    font-size: 100px;
+    color: #fff;
+    font-weight: 900;
+  }
+  p{
+    font-size: 30px;
+    text-align: center;
+    color: #53505f;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .button-large{
+    background-color: #a813e8;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 50px;
+  }
